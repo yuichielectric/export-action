@@ -1,6 +1,6 @@
 #!/bin/sh
 
-set -xe
+set -e
 
 if [ -z "$GITHUB_EVENT_PATH" ]; then
   echo "\$GITHUB_EVENT_PATH" not found
