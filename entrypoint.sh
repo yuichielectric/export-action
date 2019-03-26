@@ -8,4 +8,4 @@ if [ -z "$GITHUB_EVENT_PATH" ]; then
 fi
 
 value=$(jq -r $2 "$GITHUB_EVENT_PATH")
-export $1=$value
+export STAGING_URL_DIRECT=$value
