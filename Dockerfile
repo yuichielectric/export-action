@@ -13,6 +13,3 @@ LABEL com.github.actions.color="blue"
 RUN apk update \
     && apk add jq \
     && rm -rf /var/cache/apk/*
-
-ADD entrypoint.sh /entrypoint.sh
-ENTRYPOINT ["/entrypoint.sh"]
