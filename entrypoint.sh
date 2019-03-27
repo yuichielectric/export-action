@@ -7,5 +7,4 @@ if [ -z "$GITHUB_EVENT_PATH" ]; then
   exit 1
 fi
 
-value=$(jq -r $2 "$GITHUB_EVENT_PATH")
-export $1=$value
+jq -r $2 "$GITHUB_EVENT_PATH" > $1
