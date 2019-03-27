@@ -7,4 +7,4 @@ if [ -z "$GITHUB_EVENT_PATH" ]; then
   exit 1
 fi
 
-jq -r $2 "$GITHUB_EVENT_PATH" > $1
+jq -r $1 "$GITHUB_EVENT_PATH" > $2
